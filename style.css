@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Kosugi&display=swap');
+/* 
+font-family: 'Comic Neue', cursive;
+font-family: 'Kosugi', sans-serif; 
+*/
+
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primaryColor: #173A64;
+    --secondaryColor: #4D7AD1;
+    --contentColor: #C1A232;
+    --tertiaryColor: #e4d6a47a;
+}
+
+body{
+    background-color: var(--primaryColor);
+}
+
+h1{
+    font-family: 'Kosugi', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--contentColor);
+}
+
+h2{
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--contentColor);
+}
+
+h3{
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--primaryColor);
+    width: 100%;
+}
+
+p, a{
+    font-family: 'Comic Neue', cursive;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+p{
+    color: var(--contentColor);
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-none{display: none;}
+
+.spaceBetween{
+    justify-content: space-between;
+}
+
+.spaceEvenly{
+    justify-content: space-evenly;
+}
+
+.textAlignCenter{
+    text-align: center;
+}
+
+.itemCenter{
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    line-height: 24px;
+}
+
+ul{
+    list-style: none;
+    flex-direction: row;
+    gap: 16px;
+}
+
+li{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+li:hover{
+    transform: scale(1.2);
+}
+
+:visited, :link, :active{
+    color: var(--contentColor);
+}
+
+/* HEADER */
+
+header{
+    height: 120px;
+    background-color: var(--primaryColor);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 1px 5px var(--tertiaryColor);
+    padding: 0 16px;
+}
+
+/*
+.navGauche{
+    width: 20%;
+}*/
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px var(--tertiaryColor);
+}
+
+/*
+.navDroite{
+    width: 15%;
+}*/
+
+main{ height: 100vh;
+    position: relative;}
+
+/* partie gauche */
+
+.imgGauche{
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 120px
+}
+
+.imgGaucheFixed{
+    width: 80%;
+}
+.imgGaucheFixed img{
+    width: 100%;
+    height: auto;
+    box-shadow: 3px 3px 3px var(--tertiaryColor);
+    border-radius: 25px;
+}
+
+/* banniere choix */
+
+.bgImg{
+    background-image: url(./assets/banniere.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banniere{
+    width: 75%;
+    justify-content: center;
+    height: calc(100vh - 120px);
+}
+
+.banniere p{
+    width: 70%;
+    margin: 32px 0;
+}
+
+.container{
+    width: 100%;
+    margin-bottom: 64px;
+    gap: 64px;
+}
+
+.choix{
+    justify-content: center;
+    background-color: var(--tertiaryColor);
+    gap: 8px;
+    padding: 8px;
+    border-radius: 25px;
+}
+
+.imgChoix{
+    width: 90%;
+}
+
+.imgChoix img{
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px var(--primaryColor);
+}
+
+.animation{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.animation:hover{
+    transform: scale(1.2) translateY(-16px);
+    box-shadow: 3px 3px 3px var(--contentColor);
+}
+
+/*.animationManga{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.animationManga:hover{
+    transform: scale(1.2) translateY(-20px)
+}*/
+
+/* soon */
+
+.soon{
+    background-color: var(--tertiaryColor);
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 25px;
+    height: 100%;
+    width: 100%;
+}
+
+.imgSoon{
+    width: 90%;
+}
+
+.imgSoon img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.manga p{
+    width: 100%;
+    font-weight: 700;
+    color: red;
+    text-align: center;
+    position: relative;
+    top: -220px;
+}
+
+/************ Index ***********/
+
+/* main */
+
+main{
+    height: 90vh;
+    background-color: var(--primaryColor);
+}
+
+/* bannière */
+
+.motard{
+    width: 25%;
+}
+
+/************* Choix motard/motarde *************/
+
+.manga{
+    width: 200px;
+    height: 450px;
+}
+
+.logoManga{
+    width: 70%;
+}
+
+.logoManga img{
+    width: 100%;
+}
+
+.carteVerso .logoManga {position: relative; top: 50px;}
+
+.carteRecto img{ backface-visibility: hidden;}
+
+/***************** histoires *****************/
+
+.histoire{
+    gap: 1rem;
+    padding: 1rem 0;
+    justify-content: center;
+}
+
+.imgHistoire{
+    width: 95%;
+}
+
+.imgHistoire img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.histoireFixed{
+    width: 20%;
+    border-radius: 25px;
+    position: fixed;
+    top: 20vh;
+}
+
+.imgManga{
+    border-radius: 25px;
+}
+
+.histoireFixed img{
+    width: 100%;
+}
+
+.developpeHistoire{
+    width: 30%;
+}
+
+.developpeHistoire p{
+    background-color: var(--tertiaryColor);
+    color: var(--primaryColor);
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    width: 60%;
+}
+
+/* anim carte */
+
+.carteContainer{
+    position: relative;
+}
+
+.carteContainer:hover .carte{
+    transform: rotateY(180deg);
+}
+
+.carte{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+.carteRecto{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    cursor: pointer;
+}
+
+.carteVerso{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    justify-content: center;
+    background-color: var(--tertiaryColor);
+    border-radius: 25px;
+    border: 2px solid var(--contentColor);
+    padding: 5px;
+    cursor: pointer;
+}
+.carteVerso p{
+    color: var(--primaryColor);
+    font-weight: bold;
+    margin-top: 300px;
+}
+
+.animationSoon{
+    transition: transform 0.2s ease;
+}
+
+.animationSoon:hover{
+    transform: rotate(5deg);
+}
+
+@media screen and (max-width: 600px) {
+    .logo{ width: 60px; height: 60px;}
+    h1{font-size: 16px;}
+    a, p, .manga p {font-size: 12px;}
+    h2{ font-size: 16px; width: 90%; text-align: center;}
+    h3 { font-size: 14px;}
+    .developpeHistoire {width: 50%;}
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    h1{font-size: 32px;}
+    a {font-size: 16px;}
+}
+@media screen and (max-width: 1025px) {
+    main {display: block;}
+    .imgGauche {position:initial; width: 100%; height: calc((100vh - 120px)/4);}
+    .imgGaucheFixed{width: 50%; height: 80%;}
+    .imgGaucheFixed img { height: 100%; object-fit: cover;}
+    .banniere{width: 100%; gap: 32px; justify-content: center;}
+    .banniere p{width: 90%;}
+    .motard{width: 40%;}
+    .histoireFixed{ position: initial;}
+    .pos-motard img{ object-position: top; }
+    .manga {width: 150px; height: 300px;}
+    .container{gap: 32px;}
+
+
+    .menu {
+        display: block;
+        position: fixed;
+        top: 120px;
+        right: 0;
+        width: 150px;
+        padding: 8px;
+        height: calc(100vh - 120px);
+        backdrop-filter: blur(12px);
+        transform: translateX(200px);
+        transition: transform 0.6s linear;
+      }
+  
+      .menu-ouvert { transform: translateX(0);}
+      main { transition: filter 0.6s linear; }
+      .blur2 { filter: blur(5px); opacity: 0.2; }
+     
+      .menu ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+      }
+      .menu ul li { margin-top: 16px; }
+      .logo-burger { display: block; }
+      .navGauche, .navDroite {display: none;}
+      .burger {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        width: 50px;
+        height: 40px;
+      }
+      .burger span {
+        position: absolute;
+        width: 45px;
+        height: 7px;
+        background: var(--contentColor);
+        border-radius: 100px;
+        display: inline-block;
+        transition: 0.3s ease;
+        left: 0;
+      }
+      .burger-span
+      .burger span.top {
+        top: 0;
+      }    
+      .burger span.middle {
+        top: 17px;
+      }   
+      .burger span.bottom {
+        bottom: 0;
+      }
+      .top-check {
+        transform: rotate(45deg);
+        transform-origin: top left;
+        top: 2px;
+        left: 5px;
+      }
+      .bottom-check {
+        transform: rotate(-45deg);
+        transform-origin: bottom left;
+        bottom: -2px;
+        left: 5px;
+      }
+      .middle-check {
+        transform: translateX(-20px);
+        opacity: 0;
+      }
+}

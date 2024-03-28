@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTO MANGA TALES</title>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.ico"/>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/62751ecdf2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="flex spaceBetween itemCenter">
+        <a class="logo-burger d-none" href="./Index.html" title="lien vers l'accueil"><div class="logo"><img src="./assets/logo-ride_&_manga_madness.jpg" alt="logo de moto manga tales"></div></a>
+        <!-- nav gauche -->
+        <nav class="navGauche">
+            <ul class="flex itemCenter">
+                <li><a href="./Index.html" title="lien vers l'accueil"><div class="logo logo-menu"><img src="./assets/logo-ride_&_manga_madness.jpg" alt="logo de moto manga tales"></div></a></li>
+                <li><a href="./historique" title="lien vers l'historique des histoires">Historique</a></li>
+                <li><a href="./motard.html" title="lien vers la page motard">Motard</a></li>
+                <li><a href="./motarde.html" title="lien vers la page motarde">Motarde</a></li>
+            </ul>
+        </nav>
+        <!-- titre principal -->
+        <h1 class="textAlignCenter">MOTO MANGA TALES :<br>Créez votre Histoire !</h1>
+        <!-- liste droite -->
+        <nav class="navDroite">
+            <ul class="flex itemCenter">
+                <li><a href="https://www.google.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.google.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="./Index.html">Contact</a></li>
+                <li><a href="./Index.html">Crédit</a></li>
+            </ul>
+        </nav>
+        <!-- burger a afficher au format smartphone -->
+    <div class="burger d-none">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+    <nav class="menu d-none">
+        <ul class="flex itemCenter">
+            <li><a href="./historique" title="lien vers l'historique des histoires">Historique</a></li>
+            <li><a href="./motard.html" title="lien vers la page motard">Motard</a></li>
+            <li><a href="./motarde.html" title="lien vers la page motarde">Motarde</a></li><li><a href="https://www.google.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.google.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="./Index.html">Contact</a></li>
+            <li><a href="./Index.html">Crédit</a></li>
+        </ul>
+    </nav>   
+    </header>
+    <!-- corp du site -->
+    <main class="flex menu-blur">
+        <!-- image d'accueil à gauche -->
+        <div class="imgGauche flex itemCenter">
+            <div class="imgGaucheFixed"><img src="./assets/image_accueil.jpg" alt="dessin d'une fille sur une moto"></div>
+        </div>
+        <!-- hero -->
+        <div class="banniere bgImg flex itemCenter">
+            <p>Plongez dans l'univers unique de "Moto Manga Tales" où votre passion pour la moto et les mangas prend vie ! Notre site vous offre une expérience interactive où vous pouvez choisir votre identité de motard ou de motarde, ainsi que votre genre de manga préféré parmi une sélection éclectique. En fonction de vos choix, laissez-vous emporter dans une aventure épique où votre histoire en tant que motard ou motarde manga se déroulera sous vos yeux. Préparez-vous à vivre des moments de passion, d'action et de découverte dans un monde où la vitesse rencontre l'imagination. Rejoignez-nous sur "Moto Manga Tales" et créez votre propre légende dès aujourd'hui ! </p>
+            <!-- container choix motard/motarde -->
+            <div class="container ctn-index flex spaceEvenly itemCenter">
+                <div class="choix motard flex">
+                    <h3 class="textAlignCenter">Motard</h3>
+                    <div class="imgChoix">
+                        <a href="./motard.html"><img class="animation" src="./assets/motard.jpg" alt="dessin d'un motard"></a>
+                    </div>
+                </div>
+                <div class="choix motard flex">
+                    <h3 class="textAlignCenter">Motarde</h3>
+                    <div class="imgChoix">
+                        <a href="./motarde.html"><img class="animation" src="./assets/Motarde.jpg" alt="dessin d'une motarde"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js" defer></script>
+</body>
+</html>
