@@ -271,7 +271,7 @@ main{
 
 .manga{
     width: 200px;
-    height: 450px;
+    height: 350px;
 }
 
 .logoManga{
@@ -337,9 +337,11 @@ main{
     position: relative;
 }
 
+/*
 .carteContainer:hover .carte{
     transform: rotateY(180deg);
 }
+*/
 
 .carte{
     position: absolute;
@@ -402,15 +404,13 @@ main{
 }
 @media screen and (max-width: 1025px) {
     main {display: block;}
-    .imgGauche {position:initial; width: 100%; height: calc((100vh - 120px)/4);}
-    .imgGaucheFixed{width: 50%; height: 80%;}
-    .imgGaucheFixed img { height: 100%; object-fit: cover;}
+    .imgGauche {display: none;}
     .banniere{width: 100%; gap: 32px; justify-content: center;}
-    .banniere p{width: 90%;}
+    .container{width: 90%; margin-right: auto; margin-left: auto;}
     .motard{width: 40%;}
     .histoireFixed{ position: initial;}
     .pos-motard img{ object-position: top; }
-    .manga {width: 150px; height: 300px;}
+    .manga {width: 150px; height: 260px;}
     .container{gap: 32px;}
 
 
