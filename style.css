@@ -406,12 +406,11 @@ main{
     main {display: block;}
     .imgGauche {display: none;}
     .banniere{width: 100%; gap: 32px; justify-content: center;}
-    .container{width: 90%; margin-right: auto; margin-left: auto;}
+    .container{width: 90%; gap: 32px; margin-right: auto; margin-left: auto; margin-bottom: 32px;}
     .motard{width: 40%;}
     .histoireFixed{ position: initial;}
     .pos-motard img{ object-position: top; }
-    .manga {width: 150px; height: 260px;}
-    .container{gap: 32px;}
+    .manga, .carteContainer {width: 150px; height: 260px;}
 
 
     .menu {
